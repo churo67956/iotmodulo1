@@ -12,6 +12,15 @@ to a receiver over a long distance.
 4) Small data packages such as sensor data
 5) *Low power consuption* ( around 20 mW)
 6) SEMTECH : LoRa is a trademark of Semetech corporation 
+** LPWAN : low power wide area network
+Wireless communication designed for sending small data packages over long
+distances.The devices operates on a battery.
+
+There are a number of competing technologies in the LPWAN such as : LoRa,
+Narrowband iot (NB-IoT),Sigfox...
+
+LoRa can't send audio or video data instead sends small data such as sensor
+data ( temperature,humity..)
 ** LoRa end nodes
 A LoRa end node consists of 2 parts : 
 - Radio module with antenna
@@ -26,14 +35,28 @@ such devices is called as *mote*,short of remote.
 LoRa Gateway consists of 2 parts :
 - A radio module with antenna.
 - A microprocessor to process the data
-LoRa Gateways are mains powered
-** LPWAN : low power wide area network
-Wireless communication designed for sending small data packages over long
-distances.The devices operates on a battery.
+LoRa Gateways are mains powered and connected to the internet
+Multiple gateways can receive data from the same end node.
+Gateways can listen to multiple frequencies simultaneously,
+in every spreading factor at each frecuency.
+** LoRa Network
+LoRaWAN network architecture is deployed in a start topology.
+The communication between the end node and gateway is bidirectional
+which means the end node can send data to the gateway but it can also
+receive data from the gateway.
+Communication from the end node to the gateway is called *uplink*.
+Communication from the gateway to the end node is called *downlink*.
 
-There are a number of competing technologies in the LPWAN such as : LoRa,
-Narrowband iot (NB-IoT),Sigfox...
+End Nodes --> Gateways --> Network Server --> Server Apps
 
-LoRa can't send audio or video data instead sends small data such as sensor
-data ( temperature,humity..)
+An end node can send data to multiple gateways.Gateways forward
+the packages to the network server.The network server filters
+the packages and forward the best ones to the correct application server.
+Also the network server determinates with of the gateways is the perfect
+one to send the data back.
 
+LoRaWAN doesn't support end communication between nodes.But it's possible
+using a library for that.
+
+** TODO Lora Playlist
+[[https://www.youtube.com/watch?v=6WMzRrmMjQU&list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g&index=2][end this video minute 5:30]] 

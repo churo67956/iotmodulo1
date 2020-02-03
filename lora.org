@@ -1,0 +1,39 @@
+* LoRA
+[[https://www.youtube.com/watch?v=cUhAyyzlv2o&list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g][LoRa playlist]]
+LoRa is an acronym of *Lo*ng *Ra*nge and it's a wireless technology where
+a low power sender trasmit small data packages ( 0.3 kbps to 5.5 kbps)
+to a receiver over a long distance.
+*Gateways* can handle hundreds of device at the same time:
+
+** Key words 
+1) Wireless technoloy
+2) 
+3) *Long distance*
+4) Small data packages such as sensor data
+5) *Low power consuption* ( around 20 mW)
+6) SEMTECH : LoRa is a trademark of Semetech corporation 
+** LoRa end nodes
+A LoRa end node consists of 2 parts : 
+- Radio module with antenna
+- Microprocessor to process for example the sensor data
+
+LoRa end nodes are often battery powered.
+
+LoRa end nodes have a wireless trasceiver,if the device
+also has a sensor, the device also acts as a remote device
+such devices is called as *mote*,short of remote.
+** LoRa Gateway
+LoRa Gateway consists of 2 parts :
+- A radio module with antenna.
+- A microprocessor to process the data
+LoRa Gateways are mains powered
+** LPWAN : low power wide area network
+Wireless communication designed for sending small data packages over long
+distances.The devices operates on a battery.
+
+There are a number of competing technologies in the LPWAN such as : LoRa,
+Narrowband iot (NB-IoT),Sigfox...
+
+LoRa can't send audio or video data instead sends small data such as sensor
+data ( temperature,humity..)
+

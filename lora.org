@@ -6,8 +6,8 @@ to a receiver over a long distance.
 *Gateways* can handle hundreds of device at the same time:
 
 ** Key words 
-1) Wireless technoloy
-2) 
+1) Radio and modulation = LoRa
+2) Wireless technology
 3) *Long distance*
 4) Small data packages such as sensor data
 5) *Low power consuption* ( around 20 mW)
@@ -58,5 +58,18 @@ one to send the data back.
 LoRaWAN doesn't support end communication between nodes.But it's possible
 using a library for that.
 
+** LoRa Alliance
+
+A non-profit organisation of more than 500 companies to promote LPWAN through
+the development and promotion of LoRaWAN.
+
+** ISM Band
+
+LoRa operates in the unlicensed ISM (Industrial,Scientific and Medical) radio band 
+that are available wordwide.
+In Europe the band goes from 863-870 MHz.
+Because anyone can use these band there are some rules set otherwise the band
+became unusable ( lots of signal interferances ).In Europe The ETSI ( Europe
+Teleco Standar 
 ** TODO Lora Playlist
 [[https://www.youtube.com/watch?v=6WMzRrmMjQU&list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g&index=2][end this video minute 5:30]] 

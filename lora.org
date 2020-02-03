@@ -70,6 +70,47 @@ that are available wordwide.
 In Europe the band goes from 863-870 MHz.
 Because anyone can use these band there are some rules set otherwise the band
 became unusable ( lots of signal interferances ).In Europe The ETSI ( Europe
-Teleco Standar 
+Telecommunication Standar Institute) manages the radio spectrum to ensure 
+co-existance between all the different radio technologies.
+In Europe the ISM radio band must comply to the following rules : 
+- For uplink, the maximun transmission power is 25mW (14 dBm).For downlink,
+the maximun transmission power is 0.5W(27dBm)
+- Maximun allowed antenna gain + 2.15 dBi.
+
+Besides, the ISM rules the network operator can also add additional rules.
+One of the most commond network operator is *The Things Network*
+
+** Time on Air
+Time on Air is the amount of time the signal takes from the sender to the
+receiver.
+
+** Duty cycle
+
+The duty cycle is the proportion of time during which a component is operated.
+In Europe the duty cycle goes from 0.1% to 1% per day, depending of the channel.
+
+For example and end node with a TOR = 530ms and Duty cycle equal a 1%, before
+transmit again the signal it must waits 0.99*530 ms
+
+** LoRaWAN Classes
+- A(ll) : battery powered devices.Each device uplink to the gateway and is followed
+by two short downlink receive windows.
+- B(eacon) : same as class A but these device also opens extra receive windows at
+scheduled times 
+- C(ontinuous) : same as class A but the devices are continously listening.Hence these
+devices uses more power and are often mains powered.
+*** Class A
+Before the next transmission, at t1 and t2 second after an uplink trasmission an end
+node opens two receive slots.The gateway can respond within the first receive slot 
+or the second receive slot, but not both.
+*** Class B
+Similar to class A, but class B devices opens extra receive slots at  scheduled times.
+The gateway sends beacon to end devices to synchronised allowing gateway to know when
+the node is listening.
+*** Class C
+Similar to class B, but it continous listening gateway responses before an uplink
+transmission.
+
 ** TODO Lora Playlist
+
 [[https://www.youtube.com/watch?v=6WMzRrmMjQU&list=PLmL13yqb6OxdeOi97EvI8QeO8o-PqeQ0g&index=2][end this video minute 5:30]] 
